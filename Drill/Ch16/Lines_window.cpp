@@ -15,14 +15,14 @@ Lines_window::Lines_window(Point xy, int w, int h, const string& title)
     
     xy_out{Point{200,0}, 100, 40, "current (x,y):"},
     
-    color_menu{Point{x_max()-200,150},100,40,Menu::vertical,"color"},
+    color_menu{Point{x_max()-110,150},100,40,Menu::vertical,"color"},
     
-    color_button{Point{x_max()-200,150},100,40,"Color menu",
+    color_button{Point{x_max()-110,150},100,40,"Color menu",
     [](Address,Address pw){reference_to<Lines_window>(pw).color_menu_pressed();}},
 
-    style_menu{Point{x_max()-400,150},100,40,Menu::vertical,"style"},
+    style_menu{Point{x_max()-210,150},100,40,Menu::vertical,"style"},
 
-    style_button{Point{x_max()-400,150},100,40,"Style menu",
+    style_button{Point{x_max()-210,150},100,40,"Style menu",
     [](Address,Address pw){reference_to<Lines_window>(pw).style_menu_pressed();}}
 {
     attach(next_button);
