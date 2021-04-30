@@ -89,11 +89,8 @@ int main()
 
 	Item cipo{"horse shoe",99,12.34};
 
-	vi.push_back(cipo);
-
 	Item kamera{"Canon S400",9988,499.99};
 
-	vi.push_back(kamera);
 
 	cout << "(Vector) Before sort:"<<endl;
 
@@ -128,6 +125,9 @@ int main()
 	for(const auto& i : vi)
 		cout << i.name <<' '<< i.iid<<' '<< i.value << ' ' << endl;
 
+	vi.insert(find_if(vi.begin(),vi.end(),Cheaper_than(cipo.value)),cipo);
+	vi.insert(find_if(vi.begin(),vi.end(),Cheaper_than(kamera.value)),kamera);
+
 
 	cout <<endl;
 
@@ -147,11 +147,6 @@ int main()
 	//List
 
 	cout << endl;
-
-	li.push_back(cipo);
-
-	li.push_back(kamera);
-
 
 	cout << "(List) Before sort:" << endl;
 
@@ -186,6 +181,8 @@ int main()
 	for(const auto& i : li)
 		cout << i.name <<' '<< i.iid<<' '<< i.value << ' ' << endl;
 
+	li.insert(find_if(li.begin(),li.end(),Cheaper_than(cipo.value)),cipo);
+	li.insert(find_if(li.begin(),li.end(),Cheaper_than(kamera.value)),kamera);
 
 	cout <<endl;
 
