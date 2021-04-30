@@ -1,0 +1,10 @@
+"PS5" 11 499.99
+"Bitcoin" 45 54989.01
+"Tesla Model S" 30 72990.32
+"FC Barcelona mez" 2 24999.99
+"Samsung TV" 75 249999.99
+"NBER Energy Drink" 24 199.99
+"Iphone 12 Pro Max" 67 425999.99
+"Audi TT RS Coupé" 6 23248190.5 
+"The Last Of Us Part 2" 55 18999.99
+"Lego R2-D2" 78 72989.99
