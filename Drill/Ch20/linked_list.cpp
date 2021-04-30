@@ -21,6 +21,14 @@ public:
 
 	my_list(): first(new Link<Elem>()), last(first) {}
 
+	~my_list()
+	{
+		while(first !=0){
+			auto p= first->succ;
+			delete first;
+			first=p;
+		}
+	}
 
 	class iterator;		//member type: iterator
 
@@ -37,8 +45,6 @@ public:
 
 	Elem& front() {return *first;}			//the first element
 	Elem& back() {return *last;}			//the last element
-
-
 
 };
 
